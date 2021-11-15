@@ -23,7 +23,7 @@ Fish=read.csv("Fish.csv")
 
 <!--In this section you explain what you are trying to show.  Where did the data come from?  What is the research or other question you are trying to answer?!-->
 
-In this assignment, we are showing the weight of fish using different numerical tables and graphs.
+In this assignment, we are showing the weight of fish using different numerical tables and graphs. We are trying to find the best two variables to predict the weight of each type of fish. 
 
 ## Build the best regression model you can that predicts the weight of perch
 ## Using only two predictor variables  
