@@ -139,4 +139,4 @@ This analysis of variance table basically shows that model 1 is slightly better 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
 
 
-We fail to reject the null hypothesis becasue the P value is high at 0.879. 
+We fail to reject the null hypothesis because the P value is high at 0.879. We conclude that Height and Width are the two best varaible when predicting weight. 
