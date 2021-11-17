@@ -45,8 +45,6 @@ perch=filter(Fish,Species=="Perch")
 <!--Divide this section into two sub-sections:  One for your descriptive  results and one for your inferential results.!-->
 
 
-
-
 ## Descriptive Results
 
 ### Graphical Descriptive Results
@@ -71,6 +69,9 @@ basicNN + geom_point() + geom_smooth(method=lm)
 ```
   
 
+These line plots are pretty standard. It shows that the longer length of the fish, the heavier they weight. There are many more fish that are smaller and lighter than bigger and heavier. 
+
+
 ### Numerical Descriptive Results
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
@@ -91,6 +92,8 @@ library(car)
 subsets(regsubsets.out,statistic="adjr2",legend="bottomright",main="Adjusted R^2")
 ```
   
+The graph shows that the Y axis is adjusted R square, and the X axis is the number of variables used in a linear fit.
+
 
 
 ```{r}
@@ -100,12 +103,19 @@ which.max(summary.out$adjr2)
 summary.out$which[3,]
 ```
 
+The summary shows which two variables are best, which is height and width. 
+
+
 ```{r}
 best.model <- lm(Weight~Height+Width,data=perch)
 summary(best.model)
 fullup=lm(Weight~ .,data= select(perch, -Species))
 ```
 
+
+We made a linear model based on height and width. It shows that the best prediction for weight = -536 + 74.77 * Height +69.62 * width.
+
+This equation is the best fit for predicting the weight of the perch using the two variables, width and height. 
 
 
 ## Inferential Results
